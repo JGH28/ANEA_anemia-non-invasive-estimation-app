@@ -11,8 +11,6 @@
 
 ### Co-Asesor: Mtro. Moisés Sotelo Rodríguez
 
-## Fase 1 - Segmentación Automática de la Conjuntiva Palpebral para la Estimación No-Invasiva de Anemia
-
 ### Integrantes del equipo:
 
 * Sael Cardona Noriega
@@ -20,14 +18,13 @@
 * Marisol Elizabeth Huerta Lucio
 
 ---
+## Fase 1 - Segmentación Automática de la Conjuntiva Palpebral para la Estimación No-Invasiva de Anemia
 
-## Objetivo del Proyecto
-
-El objetivo principal de este proyecto es desarrollar una herramienta basada en inteligencia artificial que permita segmentar automáticamente la región de la conjuntiva palpebral a partir de una imagen del ojo, como paso previo para estimar el nivel de hemoglobina en sangre y, por ende, detectar posibles casos de anemia de forma no invasiva. Esta fase se enfoca exclusivamente en la tarea de segmentación semántica de la región ocular de interés.
+ Esta fase se enfoca exclusivamente en la tarea de segmentación semántica de la región ocular de interés.
 
 ---
 
-## Elección de Transformers y Hugging Face
+### Elección de Transformers y Hugging Face
 
 Para esta tarea se optó por utilizar un modelo preentrenado de segmentación disponible en la plataforma [Hugging Face](https://huggingface.co/) debido a sus ventajas en cuanto a:
 
@@ -39,7 +36,7 @@ Se utilizó en particular el modelo [nvidia/segformer-b0-finetuned-ade-512-512](
 
 ---
 
-## Qué es un modelo de segmentación semántica
+### ¿Qué es un modelo de segmentación semántica?
 
 La segmentación semántica es una tarea de visión por computadora en la que se clasifica cada píxel de una imagen de acuerdo a la clase a la que pertenece. En este proyecto, nos interesa clasificar los píxeles que pertenecen a la conjuntiva palpebral vs. los que no, generando máscaras binarias.
 
